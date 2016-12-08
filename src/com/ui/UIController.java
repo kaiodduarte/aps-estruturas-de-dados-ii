@@ -36,14 +36,14 @@ public class UIController implements Initializable {
 		c.UI(txtArea.getText());
 
 		Label before = new Label("Before\n\n");
-		TextArea textArea = new TextArea(c.getBefore());
-		textArea.setEditable(false);
-		textArea.setMaxHeight(c.getAfter().length());
+		TextArea txtArea = new TextArea(c.getBefore());
+		txtArea.setEditable(false);
+		txtArea.setMaxHeight(c.getAfter().length());
 
 		Label after = new Label("After\n\n");
-		TextArea textArea1 = new TextArea(c.getAfter());
-		textArea1.setEditable(false);
-		textArea1.setMaxHeight(c.getAfter().length());
+		TextArea txtArea1 = new TextArea(c.getAfter());
+		txtArea1.setEditable(false);
+		txtArea1.setMaxHeight(c.getAfter().length());
 
 		Label sizeA = new Label("\nSize: " + c.getAfter().length() + "");
 		Label line = new Label("\n\n");
@@ -51,11 +51,11 @@ public class UIController implements Initializable {
 
 		GridPane expContent = new GridPane();
 		expContent.add(before, 0, 0);
-		expContent.add(textArea, 0, 1);
+		expContent.add(txtArea, 0, 1);
 		expContent.add(sizeB, 0, 2);
 		expContent.add(line, 0, 3);
 		expContent.add(after, 0, 4);
-		expContent.add(textArea1, 0, 5);
+		expContent.add(txtArea1, 0, 5);
 		expContent.add(sizeA, 0, 6);
 
 		alert.getDialogPane().setContent(expContent);

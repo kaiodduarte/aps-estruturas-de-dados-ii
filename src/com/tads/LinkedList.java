@@ -25,13 +25,13 @@ public class LinkedList {
 		return first == null;
 	}
 
-	public boolean search(String letra) {
+	public boolean search(String letter) {
 		if (empty())
 			return false;
 
 		Node p = first;
 
-		while (p != null && !letra.equals(p.getLetra())) {
+		while (p != null && !letter.equals(p.getLetter())) {
 			p = p.next;
 		}
 
@@ -95,7 +95,7 @@ public class LinkedList {
 
 			Node min = new Node("", 0);
 			min.setFreq(prev.getFreq() + p.getFreq());
-			min.setLetra(prev.getLetra() + p.getLetra());
+			min.setletter(prev.getLetter() + p.getLetter());
 
 			min.left = prev;
 			min.right = p;
@@ -117,7 +117,7 @@ public class LinkedList {
 		for (i = 0; i < a.length(); i++)
 			for (j = first; j != null; j = j.next) {
 				c = a.charAt(i) + "";
-				if (c.equals(j.getLetra()))
+				if (c.equals(j.getLetter()))
 					x += j.getCode();
 			}
 

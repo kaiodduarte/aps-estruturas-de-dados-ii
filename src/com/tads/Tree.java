@@ -35,7 +35,7 @@ public class Tree {
 
 	public void search(Node n, String a, String[] c) {
 		if (n != null) {
-			if (a.equalsIgnoreCase(n.getLetra()))
+			if (a.equalsIgnoreCase(n.getLetter()))
 				c[0] += n.getCode();
 
 			search(n.left, a, c);

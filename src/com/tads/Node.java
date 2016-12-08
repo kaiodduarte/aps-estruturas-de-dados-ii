@@ -1,32 +1,32 @@
 package com.tads;
 
 public class Node {
-	private String letra;
+	private String letter;
 	private String code;
 	private int freq;
 	public Node left;
 	public Node right;
 	public Node next;
 
-	public Node(String letra, int freq){
+	public Node(String letter, int freq){
 		this.code = "";
 		this.freq = freq;
-		this.letra = letra;
+		this.letter = letter;
 		this.left = null;
 		this.right = null;
 		this.next = null;
 	}
 	
-	public String getLetra() {
-		return letra;
+	public String getLetter() {
+		return letter;
 	}
 
-	public void setLetra(String letra) {
-		this.letra = letra;
+	public void setletter(String letter) {
+		this.letter = letter;
 	}
 	
 	public void print(){
-		System.out.print("{" + letra + ", " + freq + "}");
+		System.out.print("{" + letter + ", " + freq + "}");
 	}
 
 	public int getFreq() {
