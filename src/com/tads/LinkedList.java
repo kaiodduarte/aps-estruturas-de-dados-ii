@@ -128,8 +128,6 @@ public class LinkedList {
 		int i, j = 0, count = 0;
 		boolean x;
 
-		a = a.toLowerCase();
-
 		for (i = 0; i < a.length(); i++) {
 			count = 0;
 			x = false;
