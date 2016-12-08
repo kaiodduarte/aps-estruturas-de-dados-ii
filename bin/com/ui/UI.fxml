@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="aPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.UIController">
+   <children>
+      <Button fx:id="btn" layoutX="152.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickButton" text="Compact" />
+      <Label fx:id="label" layoutX="39.0" layoutY="35.0" text="Enter text to be compressed" />
+      <TextArea fx:id="txtArea" layoutX="39.0" layoutY="62.0" prefHeight="115.0" prefWidth="284.0" />
+   </children>
+</AnchorPane>
